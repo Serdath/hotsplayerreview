@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tier List Maker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+
+        .tier-list {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .tier {
+            background-color: #111;
+            border: 1px solid #ccc;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+
+        .item {
+            background-color: #1a1a1a;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 5px;
+            position: relative;
+        }
+
+        .description {
+            display: none;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #111; /* Corrected to a darker background color */
+            color: #fff; /* Set text color to white */
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .item:hover .description {
+            display: block;
+            opacity: 1;
+            width: 400px;
+        }
+
+        .tier-heading {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .tier-description {
+            font-size: 14px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1 class="tier-heading">Heroes of the Storm Players</h1>
+<p class="tier-description">This tier list is purely subjective and depends on my experience playing with that player. I won't talk about people with whom I have never played nor the one I have too few games to conduct a proper review.</p>
+<p class="tier-description">My IGN is : DarkPrelateZ and I am currently playing in EU server. I identify myself as a hardcore player, always strive to become better at this game and take most of the matches I participate in seriously. It doesn't mean that I don't know how to have fun or troll but only when victory is assured. It is a game afterall and having fun is the utmost priority. But it is also a team game so makes sure your goal in a match alligns with other players. You may have fun by trolling but not every one in the team thinks the same.
+<p class="tier-description">My highest rank achieved is GrandMaster 18: 8148RP. My moto is : Everyone makes mistakes so every game is winnable, it depends on if you truly want to win or not or if your mentality is steady enough to think through during the struggle.
+    <p class="tier-description">This is not really a tier list but rather my review list requested by one of my friend because they are curious about my perspective of everyone.
+<div class="tier-list" id="tierList">
+    <div class="tier" id="tier1">
+        <h2>I enjoy playing with</h2>
+        <div class="item">
+            <p>FrozenZerg</p>
+            <div class="description">
+                He is by far the most conscious Quick Match player I have ever met. Despite playing only Tychus and sometimes Butcher, He is willing to do whatever necessary to facilitate team's advantages by soaking or taking camps if his teammates happen to drown in ARAM too much. He also displays exceptional skills and adaptabilities with his favorite hero Tychus so you can always be assured he is fulfilling his role competently. From my experience, he is a hardcore player, focuses on winning rather than messing around and trolling, just like my style. I enjoy playing with him.
+            </div>
+        </div>
+
+        <!-- Add SamDovl here -->
+        <div class="item">
+            <p>SamDovl</p>
+            <div class="description">
+                His Chromie is quite impressive, and he is an outgoing person, evident by constantly spamming emote at the start and at the end of the game. He also asks me (or you) nicely to join his lobby sometimes, which is appreciated instead of immediately inviting the player. He loves hunting Abathur and will gladly dive a fort to do so. Although sometimes by doing those risky moves, he forgets to soak, clear waves, and maybe even die. Still, he times his Time Traps perfectly to save his teammates multiple times. I enjoy playing in the same lobby with him.
+            </div>
+        </div>
+        <!-- End SamDovl -->
+    </div>
+
+    <div class="tier" id="tier2">
+        <h2>I like playing with</h2>
+        <div class="item">
+            <p>Lipstick</p>
+            <div class="description">
+                Despite maining a toxic hero like Valeera, she is a friendly person to talk to and has also exceptional skills with her favorite heroes. However, as you can expect from a Valeera player, she will sit in one place and tries to assassinate stragglers rather than do camp and soak wave although she will still do so if she can't find an opportunity or their composition counters her but hey, that is what valeera's playstyle is and is good at so she is in character, no complaints. Her other heroes's skills range from decent to abysmal so expect her to int most of the time when she is not on her main. I like playing with her.
+            </div>
+        </div>
+    </div>
+
+    <div class="tier" id="tier3">
+        <h2>Neutral</h2>
+    </div>
+
+    <div class="tier" id="tier4">
+        <h2>I don't like playing with</h2>
+        <div class="item">
+            <p>SDmitriy</p>
+            <div class="description">
+                He is friendly, he will ask you if you want to join his lobby, or if you are free to do so. He will send proper replies when you tell him you are busy doing somethings like eating or playing custom games. However, I am quite disheartened to say his Rehgar is absolutely mediorce at best, appalling at worst : His talent choices are questionable, he lacks necessary micro skills to pilot and become a good healer, he lacks macro skills to do camps or soak waves which his hero is the best healer to do so. It is really hard for me to decide in this case but currently I don't like playing with him.
+            </div>
+        </div>
+    </div>
+
+    <div class="tier" id="tier5">
+        <h2>I hate playing with</h2>
+         <div class="item">
+            <p>Twister</p>
+            <div class="description">
+                Frankly, I have never heard him talk or just talk very little, I don't remember anymore as I have removed him from my friendlist a long time ago. He possesses decent knowledge about his main hero : Artanis but the worst part is he is too aggressive with his hero leading to many pointless deaths just because he decides to overstay and fight to his last breath instead of running away. Without a proper team to support his recklessness, I doubt he will have many wins on his own. He is not someone you want to play with if you can't or don't want to support him at a moment's notice. And oh, what is macro play when he just arams all days to stack his quest. I hate playing with him.
+            </div>
+        </div>
+    </div>
+    <!-- Additional tiers... -->
+</div>
+
+</body>
+</html>
